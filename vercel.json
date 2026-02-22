@@ -9,7 +9,7 @@
         "runtime": "python3.13",
         "installCommand": "pip install uv && uv sync --frozen",
         "includeFiles": [
-          "app/**",
+          "app/**/*",
           "config.defaults.toml",
           "pyproject.toml",
           "uv.lock"
