@@ -18,12 +18,7 @@
   ],
   "functions": {
     "main.py": {
-      "includeFiles": [
-        "app/**/*",
-        "config.defaults.toml",
-        "pyproject.toml",
-        "uv.lock"
-      ]
+      "includeFiles": "{app/**/*,config.defaults.toml,pyproject.toml,uv.lock}"
     }
   },
   "routes": [
