@@ -12,15 +12,17 @@
       "config": {
         "maxLambdaSize": "50mb",
         "runtime": "python3.13",
-        "installCommand": "pip install uv && uv sync --frozen"
+        "installCommand": "pip install uv && uv sync --frozen",
+        "includeFiles": [
+          "app/static/**",
+          "app/static/**/*",
+          "config.defaults.toml",
+          "pyproject.toml",
+          "uv.lock"
+        ]
       }
     }
   ],
-  "functions": {
-    "main.py": {
-      "includeFiles": "{app/**/*,config.defaults.toml,pyproject.toml,uv.lock}"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
